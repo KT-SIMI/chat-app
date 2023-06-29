@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const socketIO = require('socket.io');
 
 // Connect to MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/testdb', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://user111:MJki7GHZOsRCHIKo@cluster0.suasqti.mongodb.net/eseries?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('MongoDB connected...');
     startSocketServer();
